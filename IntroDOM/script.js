@@ -1,7 +1,7 @@
 // import the button
 let btn = document.getElementById("btn");
 let titre = document.querySelector("h1");
-let deleteBtn = document.querySelectorall(".deleteBtn");
+
 // ----------------------------------------------
 
 
