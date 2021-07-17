@@ -26,6 +26,7 @@ for (let i = 0; i < plusBtn.length; i++) {
     });
 }
 //delete
-deleteBtn[i].addEventListener("click", function() {
-    deleteBtn[i].parentElement.parentElement.remove();
+let btnDelete = document.querySelectorALL(".btnDelete");
+btnDelete[i].addEventListener("click", function() {
+    btnDelete[i].parentElement.parentElement.remove();
 })
