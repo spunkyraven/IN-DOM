@@ -26,7 +26,9 @@ for (let i = 0; i < plusBtn.length; i++) {
     });
 }
 //delete
-let btnDelete = document.querySelectorALL(".btnDelete");
-btnDelete[i].addEventListener("click", function() {
-    btnDelete[i].parentElement.parentElement.remove();
-})
+let btnDelete = document.querySelectorAll(".btnDelete");
+for (let i = 0; i < plusBtn.length; i++) {
+    btnDelete[i].addEventListener("click", function() {
+        btnDelete[i].parentElement.parentElement.parentElement.remove();
+    });
+}
