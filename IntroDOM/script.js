@@ -32,3 +32,4 @@ for (let i = 0; i < plusBtn.length; i++) {
         btnDelete[i].parentElement.parentElement.parentElement.remove();
     });
 }
+//slides
