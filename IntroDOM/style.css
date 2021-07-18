@@ -1,6 +1,8 @@
 body {
-    background: linear-gradient(to left, #dd5e89, #f7bb97);
+    background: linear-gradient(to left, #28DF99, #99F3BD, #c8ffb4, #aac5a0);
     min-height: 100vh;
+    display: block;
+    margin: 50px;
 }
 
 .cards {
@@ -40,6 +42,10 @@ h3 {
     display: flex;
     justify-content: flex-end;
     border-radius: 10px;
+}
+
+.bg-light {
+    background-color: #f8f9fa93!important;
 }
 
 h4 {
@@ -112,4 +118,94 @@ h4 {
 .btnDelete {
     width: 20px;
     height: 20px;
+}
+
+.h_container {
+    background-color: #cac7c7;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 45px;
+}
+
+#heart {
+    font-size: 25px;
+}
+
+#heart:hover {
+    color: red;
+}
+
+
+/* footer*/
+
+.newsletter {
+    padding: 80px 0;
+    margin: 30px;
+}
+
+.newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2
+}
+
+.content-tuned {
+    font-size: 0.8rem;
+    margin-bottom: 34px !important;
+    color: #fff
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 6px
+}
+
+.form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius: 2px 0px 0px 2px
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border: 2px solid #243c4f;
+    border-color: none
+}
+
+.btn {
+    min-height: 50px;
+    border-radius: 0;
+    background: #243c4f;
+    color: #fff;
+    font-weight: 300
+}
+
+.btn:hover {
+    background: red;
+    color: #fff
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25) !important
+}
+
+.unsubscribe-link {
+    text-decoration: none !important;
+    font-size: 13px;
+    color: #fff
+}
+
+.unsubscribe-link:hover {
+    text-decoration: none !important;
+    color: #fff
 }
