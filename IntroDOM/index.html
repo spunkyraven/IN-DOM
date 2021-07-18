@@ -9,8 +9,10 @@
     <script>
         console.log(document);
     </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 </head>
 
@@ -22,13 +24,18 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </nav>
-
-
-
         </button>
         </nav>
     </header>
     <main>
+        <!-- Slides -->
+
+
+
+
+
+
+        <!-- Cards -->
         <div class="card-group">
             <div class="card">
                 <img class="card-img-top" src="./MUSHROOM.jpg" alt="Card image cap" />
@@ -42,8 +49,10 @@
                         <button class="plus">+</button>
                         <span class="qte">0</span>
                         <button class="minus">-</button>
-                        <button class="btn danger">LIKE</button>
                         <img class="btnDelete" src="https://img.icons8.com/ios/452/waste.png" alt="poubelle" />
+                        <div class="h_container">
+                            <i id="heart" class="far fa-heart"></i>
+                        </div>
                     </div>
 
                 </div>
@@ -61,8 +70,11 @@
                         <button class="plus">+</button>
                         <span class="qte">0</span>
                         <button class="minus">-</button>
-                        <button class="btn danger">LIKE</button>
+
                         <img class="btnDelete" src="https://img.icons8.com/ios/452/waste.png" alt="poubelle" />
+                        <div class="h_container">
+                            <i id="heart" class="far fa-heart"></i>
+                        </div>
                     </div>
 
                 </div>
@@ -79,10 +91,9 @@
                         <button class="plus">+</button>
                         <span class="qte">0</span>
                         <button class="minus">-</button>
-                        <button class="btn danger">LIKE</button>
                         <img class="btnDelete" src="https://img.icons8.com/ios/452/waste.png" alt="poubelle" />
-                        <div class="placement">
-                            <div class="heart"></div>
+                        <div class="h_container">
+                            <i id="heart" class="far fa-heart"></i>
                         </div>
                     </div>
 
@@ -96,8 +107,29 @@
 
 
     </main>
+    <footer>
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="content">
+                            <h2>SUBSCRIBE NOW</h2>
+                            <h6 class="content-tuned">Subscribe to our newsletter and stay tuned with future updates</h6>
+                            <div class="input-group"> <input type="email" class="form-control" placeholder="Enter email to subscribe"> <span class="input-group-btn"> <button class="btn" type="submit">Subscribe Now</button> </div>
+                    <div class="text-center"> <a class="unsubscribe-link" href="#">Would you like to unsubscribe?</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </footer>
     <!-- ----------------------------------------------------- -->
     <!-- scipts bootstrap -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+    <script src="{% static 'network/functions.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
