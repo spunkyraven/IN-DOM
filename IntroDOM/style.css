@@ -131,12 +131,14 @@ h4 {
     line-height: 45px;
 }
 
-#heart {
-    font-size: 25px;
+.fa-heart-o {
+    color: red;
+    cursor: pointer;
 }
 
-#heart:hover {
+.fa-heart {
     color: red;
+    cursor: pointer;
 }
 
 
