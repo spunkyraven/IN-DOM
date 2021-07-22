@@ -1,7 +1,6 @@
 // import the button
 let btn = document.getElementById("btn");
 let titre = document.querySelector("h1");
-
 // ----------------------------------------------
 
 
@@ -12,6 +11,8 @@ for (let i = 0; i < plusBtn.length; i++) {
     plusBtn[i].addEventListener("click", function() {
         //   qte.innerHTML = +qte.innerHTML + 1;
         qte[i].innerHTML++;
+        Total()
+
     });
 }
 
@@ -23,6 +24,8 @@ for (let i = 0; i < plusBtn.length; i++) {
     minusBtn[i].addEventListener("click", function() {
         if (qte[i].innerHTML > 0)
             qte[i].innerHTML--;
+        Total()
+
     });
 }
 //delete
@@ -30,6 +33,18 @@ let btnDelete = document.querySelectorAll(".btnDelete");
 for (let i = 0; i < plusBtn.length; i++) {
     btnDelete[i].addEventListener("click", function() {
         btnDelete[i].parentElement.parentElement.parentElement.remove();
+        Total()
+
     });
 }
-//slides
+//Total
+function Total() {
+    let prx = document.querySelectorAll(".prx");
+    let qte = document.querySelectorAll(".qte");
+    let TOTAL = document.querySelector(".TOTAL");
+    let somme = 0;
+    for (let i = 0; i < qte.length; i++) {
+        somme = somme + prx[i].innerHTML * qte[i].innerHTML;
+    }
+    TOTAL.innerHTML = somme;
+}
