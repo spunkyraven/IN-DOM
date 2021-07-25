@@ -48,3 +48,9 @@ function Total() {
     }
     TOTAL.innerHTML = somme;
 }
+//LIKE
+$(function() {
+    $("i").click(function() {
+        $("i,.like").toggleClass("press", 1000);
+    });
+});
