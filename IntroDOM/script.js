@@ -51,6 +51,6 @@ function Total() {
 //LIKE
 $(function() {
     $("i").click(function() {
-        $("i,.like").toggleClass("press", 1000);
+        $("i,.like1").toggleClass("press", 1000);
     });
 });
