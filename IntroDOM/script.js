@@ -50,7 +50,17 @@ function Total() {
 }
 //LIKE
 $(function() {
-    $("i").click(function() {
-        $("i,.like1").toggleClass("press", 1000);
+    $("i.f1").click(function() {
+        $("i.f1,.like").toggleClass("press", 1000);
+    });
+});
+$(function() {
+    $("i.f2").click(function() {
+        $("i.f2,.like").toggleClass("press", 1000);
+    });
+});
+$(function() {
+    $("i.f3").click(function() {
+        $("i.f3,.like").toggleClass("press", 1000);
     });
 });
